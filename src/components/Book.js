@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Book({ book }) {
   return (
     <li>
@@ -16,3 +18,11 @@ export default function Book({ book }) {
     </li>
   );
 }
+
+Book.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }).isRequired,
+};
