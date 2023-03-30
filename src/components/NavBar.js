@@ -1,4 +1,4 @@
-import NavItem from "./NavItems";
+import NavItem from './NavItems';
 
 export default function NavBar() {
   return (

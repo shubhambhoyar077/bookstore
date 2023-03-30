@@ -1,25 +1,26 @@
-import Book from "./Book";
-import AddBook from "./AddBook";
+import Book from './Book';
+import AddBook from './AddBook';
+
 export default function BookList() {
-  const books =[
+  const books = [
     {
-      title: "The Hunger Games",
-      author: "Suzanne Collins"
+      title: 'The Hunger Games',
+      author: 'Suzanne Collins',
     },
     {
-      title: "Dune",
-      author: "Frank Herbert"
+      title: 'Dune',
+      author: 'Frank Herbert',
     },
     {
-      title: "Capital in the Twenty-First Century",
-      author: "Suzanne Collins"
-    }
-  ]
+      title: 'Capital in the Twenty-First Century',
+      author: 'Suzanne Collins',
+    },
+  ];
   return (
     <div>
       <ul className="booklist">
         {books.map((book) => (
-        <Book key={book.id} book={book}/>
+          <Book key={book.id} book={book} />
         ))}
       </ul>
       <AddBook />

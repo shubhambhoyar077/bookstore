@@ -1,5 +1,5 @@
-export default function Categories(){
+export default function Categories() {
   return (
-    <button>Check Status</button>
+    <button type="button">Check Status</button>
   );
 }

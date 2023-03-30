@@ -1,9 +1,9 @@
-import { 
+import {
   createBrowserRouter,
   RouterProvider,
   Route,
-  createRoutesFromElements
- } from 'react-router-dom';
+  createRoutesFromElements,
+} from 'react-router-dom';
 import './App.css';
 
 import RouteLayout from './components/RouteLayout';
@@ -12,10 +12,10 @@ import Categories from './components/Categories';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<RouteLayout />}>
+    <Route path="/" element={<RouteLayout />}>
       <Route index element={<BookList />} />
-      <Route path='categories' element={<Categories />} />
-    </Route>
+      <Route path="categories" element={<Categories />} />
+    </Route>,
   ),
 );
 
