@@ -1,8 +1,6 @@
-export default function Book({ books }) {
+export default function Book({ book }) {
   return (
-    <>
-      {books.map((book) => (
-        <li key={book.id}>
+        <li>
           <div className="book-info">
             <h2>{book.title}</h2>
             <span>{book.author}</span>
@@ -12,8 +10,9 @@ export default function Book({ books }) {
               <button>Edit</button>
             </div>
           </div>
+          <div className="book-progress">
+            <button>UPDATE PROGRESS</button>
+          </div>
         </li>
-      ))}
-    </>
   );
 }

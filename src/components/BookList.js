@@ -1,5 +1,5 @@
 import Book from "./Book";
-
+import AddBook from "./AddBook";
 export default function BookList() {
   const books =[
     {
@@ -16,8 +16,13 @@ export default function BookList() {
     }
   ]
   return (
-    <ul className="booklist">
-      <Book bookd={books}/>
-    </ul>
+    <div>
+      <ul className="booklist">
+        {books.map((book) => (
+        <Book key={book.id} book={book}/>
+        ))}
+      </ul>
+      <AddBook />
+    </div>
   );
 }
