@@ -1,5 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { addBook, removeBook } from '../redux/books/booksSlice';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import AddBook from './AddBook';
 
@@ -9,7 +8,7 @@ export default function BookList() {
     <div>
       <ul className="booklist">
         {books.map((book) => (
-          <Book key={book.id} book={book} />
+          <Book key={book.item_id} book={book} />
         ))}
       </ul>
       <AddBook />
