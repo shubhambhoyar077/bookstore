@@ -5,12 +5,6 @@ import axios from 'axios';
 const TESTID = 'KhuwCnkXChim3ddNyljw';
 const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${TESTID}/books`;
 
-const initialState = {
-  books: [],
-  isLoading: true,
-  isBookAdded: false,
-};
-
 export const getBooks = createAsyncThunk('books/getBooks', async () => {
   try {
     const response = await axios.get(url);
@@ -28,6 +22,22 @@ export const postBook = createAsyncThunk('books/postBook', async (book) => {
     return error;
   }
 });
+
+export const deleteBook = createAsyncThunk('books/deleteBook', async (bookId) => {
+  try {
+    const response = await axios.post(`${url}/${bookId}`);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
+});
+
+const initialState = {
+  books: [],
+  isLoading: true,
+  isBookAdded: true,
+  idBookDeleted: true,
+};
 
 export const booksSlice = createSlice({
   name: 'books',
@@ -75,6 +85,14 @@ export const booksSlice = createSlice({
       .addCase(postBook.fulfilled, (state) => ({
         ...state,
         isBookAdded: true,
+      }))
+      .addCase(deleteBook.pending, (state) => ({
+        ...state,
+        idBookDeleted: false,
+      }))
+      .addCase(deleteBook.fulfilled, (state) => ({
+        ...state,
+        idBookDeleted: true,
       }));
   },
 });
