@@ -6,10 +6,16 @@ import { getBooks } from '../redux/books/booksSlice';
 
 export default function BookList() {
   const books = useSelector((state) => state.books.books);
+  const isLoading = useSelector((state) => state.books.isLoading);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBooks());
   }, [dispatch]);
+  if (isLoading) {
+    return (
+      <h3>Loading...</h3>
+    );
+  }
   return (
     <div>
       <ul className="booklist">
