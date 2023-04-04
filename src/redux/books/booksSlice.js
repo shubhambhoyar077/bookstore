@@ -1,9 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// const BOOKSTOREID = 'U4HmerEPXvxyMCBtJZNQ';
-const TESTID = 'KhuwCnkXChim3ddNyljw';
-const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${TESTID}/books`;
+const BOOKSTOREID = 'U4HmerEPXvxyMCBtJZNQ';
+const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${BOOKSTOREID}/books`;
 
 export const getBooks = createAsyncThunk('books/getBooks', async () => {
   try {
