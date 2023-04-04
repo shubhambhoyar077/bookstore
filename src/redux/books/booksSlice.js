@@ -8,11 +8,21 @@ const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstor
 const initialState = {
   books: [],
   isLoading: true,
+  isBookAdded: false,
 };
 
 export const getBooks = createAsyncThunk('books/getBooks', async () => {
   try {
     const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
+});
+
+export const postBook = createAsyncThunk('books/postBook', async (book) => {
+  try {
+    const response = await axios.post(url, book);
     return response.data;
   } catch (error) {
     return error;
@@ -57,6 +67,14 @@ export const booksSlice = createSlice({
       .addCase(getBooks.rejected, (state) => ({
         ...state,
         isLoading: false,
+      }))
+      .addCase(postBook.pending, (state) => ({
+        ...state,
+        isBookAdded: false,
+      }))
+      .addCase(postBook.fulfilled, (state) => ({
+        ...state,
+        isBookAdded: true,
       }));
   },
 });
