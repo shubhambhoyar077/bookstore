@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { addBook, postBook } from '../redux/books/booksSlice';
 
 export default function AddBook() {
   const [title, setTitle] = useState('');
@@ -14,10 +14,14 @@ export default function AddBook() {
         item_id: uuidv4(),
         title,
         author,
+        category: null,
       };
-      dispatch(addBook(book));
-      setTitle('');
-      setAuthor('');
+      dispatch(postBook(book))
+        .then(() => {
+          dispatch(addBook(book));
+          setTitle('');
+          setAuthor('');
+        });
     }
   };
   return (
