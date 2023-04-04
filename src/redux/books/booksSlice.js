@@ -25,7 +25,7 @@ export const postBook = createAsyncThunk('books/postBook', async (book) => {
 
 export const deleteBook = createAsyncThunk('books/deleteBook', async (bookId) => {
   try {
-    const response = await axios.post(`${url}/${bookId}`);
+    const response = await axios.delete(`${url}/${bookId}`);
     return response.data;
   } catch (error) {
     return error;
