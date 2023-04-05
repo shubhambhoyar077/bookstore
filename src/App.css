@@ -220,3 +220,34 @@ body{
 
   color: #121212;
 }
+.chapter-prpgress{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update-progress{
+  margin: 0.75rem 1.75rem 0.563rem 3.688rem;
+
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border: none;
+  border-radius: 3px;
+
+  background-color: var(--azure);
+  font-family: RobotoSlab;
+
+  font-size: 0.813rem;
+
+  font-weight: 300;
+
+  font-stretch: normal;
+
+  font-style: normal;
+
+  line-height: normal;
+
+  letter-spacing: 0.5px;
+
+  text-align: center;
+
+  color: var(--white-two);
+}

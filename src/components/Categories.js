@@ -1,5 +1,5 @@
 export default function Categories() {
   return (
-    <button type="button">Check Status</button>
+    <button className="update-progress" type="button">Check Status</button>
   );
 }

@@ -44,7 +44,15 @@ export default function Book({ book }) {
             <span className="Complete-text">Completed</span>
           </div>
         </div>
-        <button type="button" onClick={handelProgress}>UPDATE PROGRESS</button>
+        <div className="chapter-prpgress">
+          <span className="Current-Chapter">
+            Current Chapter
+          </span>
+          <span className="Current-Lesson">
+            Chapter 17
+          </span>
+          <button className="update-progress" type="button" onClick={handelProgress}>UPDATE PROGRESS</button>
+        </div>
       </div>
     </li>
   );
