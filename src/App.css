@@ -9,6 +9,7 @@
   --z: #fafafa;
   --cool-blue: #4386bf;
   --azure: #0290ff;
+  --medium-blue: #307bbe;
 }
 ul{
   list-style: none;
@@ -112,6 +113,10 @@ body{
   border: solid 1px var(--white);
 
   background-color: var(--white-two);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Title{
@@ -156,4 +161,10 @@ body{
 }
 .author{
   margin: 0.25rem 0 0;
+}
+
+.Oval{
+  width: 4.25rem;
+  height: 4.25rem;
+  color: var(--medium-blue);
 }

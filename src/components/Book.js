@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import { removeBook, deleteBook } from '../redux/books/booksSlice';
+import 'react-circular-progressbar/dist/styles.css';
 
 export default function Book({ book }) {
   const dispatch = useDispatch();
+  const percentage = 0;
   const handelRemove = (bookId) => {
     dispatch(deleteBook(bookId))
       .then(dispatch(removeBook(bookId)));
@@ -20,6 +23,16 @@ export default function Book({ book }) {
         </div>
       </div>
       <div className="book-progress">
+        <div>
+          <CircularProgressbar
+            className="Oval"
+            value={percentage}
+          />
+          <div>
+            <span className="Percent-Complete">0%</span>
+            <span className="Complete-text">Completed</span>
+          </div>
+        </div>
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </li>
