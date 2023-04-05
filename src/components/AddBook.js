@@ -25,12 +25,12 @@ export default function AddBook() {
     }
   };
   return (
-    <div>
+    <div className="form-container">
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={handelformSubmit}>
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Book title" />
-        <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Book author" />
-        <button type="submit">ADD BOOK</button>
+        <input className="inp-title" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Book title" />
+        <input className="inp-author" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Book author" />
+        <button className="add-btn" type="submit">ADD BOOK</button>
       </form>
     </div>
   );
