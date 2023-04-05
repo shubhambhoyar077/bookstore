@@ -12,7 +12,7 @@ export default function Book({ book }) {
     <li>
       <div className="book-info">
         <h2 className="Title">{book.title}</h2>
-        <span>{book.author}</span>
+        <span className="author">{book.author}</span>
         <div className="book-action-btn">
           <button type="button">Comment</button>
           <button type="button" onClick={() => handelRemove(book.item_id)}>Remove</button>

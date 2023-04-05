@@ -65,7 +65,8 @@ body{
   color: #121212;
 }
 
-.book-action-btn > button{
+.book-action-btn > button,
+.author{
   border: none;
   background-color: var(--white-two);
   margin: 0.188rem 0.938rem 0.125rem 0;
@@ -85,4 +86,11 @@ body{
   letter-spacing: normal;
 
   color: var(--cool-blue);
+}
+.book-action-btn > button:not(:last-child){
+  padding-right: 15px;
+  border-right: solid 0.125rem var(--white);
+}
+.author{
+  margin: 0.25rem 0 0;
 }
