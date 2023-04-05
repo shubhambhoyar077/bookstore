@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=RobotoSlab');
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-:root{
+
+:root {
   --pale-grey: #f5f6fa;
   --white: #e8e8e8;
   --white-two: #fff;
@@ -14,118 +15,91 @@
   --azure: #0290ff;
   --medium-blue: #307bbe;
 }
-ul{
+
+ul {
   list-style: none;
 }
-body{
+
+body {
   background-color: var(--pale-grey);
   padding: 9.313rem 3.75rem 7.688rem 6.25rem;
 }
+
 .App-container {
   margin: 0 2.5rem 4.063rem 0;
-
   padding: 0 0 49.625rem;
-
   border-radius: 4px;
-
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
-
   background-color: var(--z);
 }
 
-.navbar{
-
+.navbar {
   margin: 0 0 2.375rem;
-
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-
   background-color: var(--white-two);
   border: solid 1px var(--white);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-.navbar h1{
+
+.navbar h1 {
   margin: 0.375rem 2.938rem 0.125rem 0;
-
-  font-family: Montserrat, Arial;
-
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
-
   font-weight: bold;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: normal;
-
   color: var(--azure);
 }
-.navbar-items{
+
+.navbar-items {
   display: flex;
   align-items: center;
 }
-.nav-links{
+
+.nav-links {
   text-decoration: none;
   margin-right: 2rem;
-
   opacity: 0.5;
-
-  font-family: Montserrat, Arial;
-
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 0.813rem;
-
   font-weight: normal;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: 1.9px;
-
   color: #121212;
 }
-.active{
+
+.active {
   opacity: 1;
 }
-.profile{
+
+.profile {
   width: 2.813rem;
-
   height: 2.813rem;
-
   margin: 0 0 0 41.5rem;
-
   padding: 0.875rem;
-  color: var(--azure)
+  color: var(--azure);
 }
-.booklist > li{
 
+.booklist > li {
   margin: 2.313rem 6.25rem 0;
-
   padding: 2rem 9.188rem 1.625rem 1.688rem;
-
   border-radius: 4px;
-
   border: solid 1px var(--white);
-
   background-color: var(--white-two);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Title{
-
+.Title {
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab, Arial;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -136,235 +110,176 @@ body{
 }
 
 .book-action-btn > button,
-.author{
+.author {
   border: none;
   background-color: var(--white-two);
   margin: 0.188rem 0.938rem 0.125rem 0;
-
-  font-family: RobotoSlab, Arial;
-
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
-
   font-weight: 300;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: normal;
-
   color: var(--cool-blue);
   cursor: pointer;
 }
-.book-action-btn > button:not(:last-child){
+
+.book-action-btn > button:not(:last-child) {
   padding-right: 15px;
   border-right: solid 0.125rem var(--white);
 }
-.author{
+
+.author {
   margin: 0.25rem 0 0;
 }
-.oval-progress{
+
+.oval-progress {
   display: flex;
   align-items: center;
 }
-.Oval{
+
+.Oval {
   width: 4.25rem;
   height: 4.25rem;
   color: var(--medium-blue);
 }
-.book-progress{
+
+.book-progress {
   display: flex;
   align-items: center;
 }
-.text-peogress{
+
+.text-peogress {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Percent-Complete{
+
+.Percent-Complete {
   margin: 0.063rem 5.75rem 0 0.688rem;
-
-  font-family: Montserrat, Arial;
-
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-
   font-weight: normal;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: normal;
-
   color: #121212;
 }
-.Complete-text{
+
+.Complete-text {
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
-
   opacity: 0.5;
-
-  font-family: Montserrat, Arial;
-
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
-
   font-weight: normal;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: normal;
-
   color: #121212;
 }
-.chapter-prpgress{
+
+.chapter-prpgress {
   display: flex;
   flex-direction: column;
+
   /* align-items: center; */
 }
-.update-progress{
-  margin: 0.75rem 1.75rem 0.563rem 3.688rem;
 
+.update-progress {
+  margin: 0.75rem 1.75rem 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border: none;
   border-radius: 3px;
-
   background-color: var(--azure);
-  font-family: RobotoSlab, Arial;
-
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.813rem;
-
   font-weight: 300;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: 0.5px;
-
   text-align: center;
-
   color: var(--white-two);
 }
+
 .Current-Chapter,
-.Current-Lesson{
+.Current-Lesson {
   margin: 0.063rem 3.625rem 0 3.688rem;
-
   opacity: 0.5;
-
-  font-family: RobotoSlab, Arial;
-
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.813rem;
-
   font-weight: 300;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: normal;
-
   color: #121212;
 }
-.Current-Lesson{
+
+.Current-Lesson {
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
   font-size: 1rem;
   color: #121212;
   opacity: 1;
 }
-.form-container{
-  margin: 2.313rem 6.25rem 0;
 
+.form-container {
+  margin: 2.313rem 6.25rem 0;
 }
 
-.form-container h2{
+.form-container h2 {
   margin: 1.813rem 32.75rem 1.188rem 0;
-
-  font-family: Montserrat, Arial;
-
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
-
   font-weight: bold;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: -0.18px;
-
   color: #888;
 }
+
 .inp-title,
-.inp-author{
+.inp-author {
   margin: 1.188rem 2.125rem 0 0;
-
   padding: 0.813rem 35.688rem 0.813rem 1.063rem;
-
   border-radius: 4px;
-
   border: solid 1px var(--white);
-
   background-color: var(--white-two);
-  font-family: Montserrat, Arial;
-
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-
   font-weight: normal;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: -0.15px;
 
   /* color: #c4c4c4; */
 }
-.inp-author{
-  margin: 1.188rem 2.125rem 0;
 
+.inp-author {
+  margin: 1.188rem 2.125rem 0;
   padding: 0.813rem 0.938rem 0.813rem 1rem;
 }
-.add-btn{
-  width: 11.5rem;
 
+.add-btn {
+  width: 11.5rem;
   height: 2.813rem;
   border: none;
   margin: 1.188rem 0 0 2.125rem;
-
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
-
   border-radius: 3px;
-
   background-color: var(--azure);
-  font-family: RobotoSlab, Arial;
-
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 0.813rem;
-
   font-weight: bold;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: 0.5px;
-
   text-align: center;
-
   color: var(--white-two);
 }
