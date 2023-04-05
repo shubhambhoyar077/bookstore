@@ -91,6 +91,16 @@ body{
 .active{
   opacity: 1;
 }
+.profile{
+  width: 2.813rem;
+
+  height: 2.813rem;
+
+  margin: 0 0 0 41.5rem;
+
+  padding: 0.875rem;
+  color: var(--azure)
+}
 .booklist > li{
 
   margin: 2.313rem 6.25rem 0;
@@ -138,6 +148,7 @@ body{
   letter-spacing: normal;
 
   color: var(--cool-blue);
+  cursor: pointer;
 }
 .book-action-btn > button:not(:last-child){
   padding-right: 15px;

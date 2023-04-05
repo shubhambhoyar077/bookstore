@@ -1,3 +1,4 @@
+import { CgProfile } from 'react-icons/cg';
 import NavItem from './NavItems';
 
 export default function NavBar() {
@@ -7,7 +8,7 @@ export default function NavBar() {
         <h1>Bookstore CMS</h1>
         <NavItem />
       </div>
-      <span>Profile</span>
+      <span><CgProfile className="profile" /></span>
     </nav>
   );
 }
