@@ -11,7 +11,7 @@ export default function Book({ book }) {
   return (
     <li>
       <div className="book-info">
-        <h2>{book.title}</h2>
+        <h2 className="Title">{book.title}</h2>
         <span>{book.author}</span>
         <div className="book-action-btn">
           <button type="button">Comment</button>
