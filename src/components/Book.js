@@ -31,12 +31,12 @@ export default function Book({ book }) {
         </div>
       </div>
       <div className="book-progress">
-        <div>
+        <div className="oval-progress">
           <CircularProgressbar
             className="Oval"
             value={percentage}
           />
-          <div>
+          <div className="text-peogress">
             <span className="Percent-Complete">
               {percentage}
               %
