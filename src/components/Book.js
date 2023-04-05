@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { removeBook, deleteBook } from '../redux/books/booksSlice';
@@ -6,10 +7,17 @@ import 'react-circular-progressbar/dist/styles.css';
 
 export default function Book({ book }) {
   const dispatch = useDispatch();
-  const percentage = 0;
+  const [percentage, setPercentage] = useState(0);
   const handelRemove = (bookId) => {
     dispatch(deleteBook(bookId))
       .then(dispatch(removeBook(bookId)));
+  };
+
+  const handelProgress = () => {
+    let per = percentage;
+    if (per < 100) {
+      setPercentage(per += 2);
+    }
   };
   return (
     <li>
@@ -29,11 +37,14 @@ export default function Book({ book }) {
             value={percentage}
           />
           <div>
-            <span className="Percent-Complete">0%</span>
+            <span className="Percent-Complete">
+              {percentage}
+              %
+            </span>
             <span className="Complete-text">Completed</span>
           </div>
         </div>
-        <button type="button">UPDATE PROGRESS</button>
+        <button type="button" onClick={handelProgress}>UPDATE PROGRESS</button>
       </div>
     </li>
   );
