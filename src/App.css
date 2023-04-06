@@ -27,7 +27,7 @@ body {
 
 .App-container {
   margin: 0 2.5rem 4.063rem 0;
-  padding: 0 0 49.625rem;
+  padding: 0 0 16.625rem;
   border-radius: 4px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
   background-color: var(--z);
@@ -128,6 +128,10 @@ body {
 .book-action-btn > button:not(:last-child) {
   padding-right: 15px;
   border-right: solid 0.125rem var(--white);
+}
+
+.book-action-btn > button{
+  margin-top: 1rem;
 }
 
 .author {
