@@ -1,39 +1,280 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --pale-grey: #f5f6fa;
+  --white: #e8e8e8;
+  --white-two: #fff;
+  --z: #fafafa;
+  --cool-blue: #4386bf;
+  --azure: #0290ff;
+  --medium-blue: #307bbe;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(--pale-grey);
+  padding: 8% 2% 7% 6%;
+}
+
+.App-container {
+  margin: 0 2% 4% 0;
+  padding: 0 0 16%;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
+  background-color: var(--z);
+}
+
+.navbar {
+  margin: 0 0 2%;
+  padding: 1% 6% 1% 6%;
+  background-color: var(--white-two);
+  border: solid 1px var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  padding-right: 2.938rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  margin-right: 2rem;
+  opacity: 0.5;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.active {
+  opacity: 1;
+}
+
+.profile {
+  width: 2.813rem;
+  height: 2.813rem;
+  color: var(--azure);
+}
+
+.booklist > li {
+  margin: 2% 6% 0;
+  padding: 2% 9.188% 1.625% 1.688%;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: var(--white-two);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Title {
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-action-btn > button,
+.author {
+  border: none;
+  background-color: var(--white-two);
+  margin-right: 0.938rem;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+  cursor: pointer;
+}
+
+.book-action-btn > button {
+  margin-top: 1rem;
+}
+
+.book-action-btn > button:not(:last-child) {
+  padding-right: 15px;
+  border-right: solid 0.125rem var(--white);
+}
+
+.author {
+  margin: 0.25rem 0 0;
+}
+
+.oval-progress {
+  display: flex;
+  align-items: center;
+}
+
+.Oval {
+  width: 4.25rem;
+  height: 4.25rem;
+  color: var(--medium-blue);
+}
+
+.book-progress {
+  display: flex;
+  align-items: center;
+}
+
+.text-peogress {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Percent-Complete {
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.Complete-text {
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.chapter-prpgress {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-progress {
+  margin: 0.75rem 1.75rem 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--azure);
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
+}
+
+.Current-Chapter,
+.Current-Lesson {
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Current-Lesson {
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-size: 1rem;
+  color: #121212;
+  opacity: 1;
+}
+
+.form-container {
+  margin: 2.313rem 6.25rem 0;
+  border-top: 1px solid var(--white);
+}
+
+.form-container h2 {
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.inp-title,
+.inp-author {
+  margin: 1.188rem 5% 0 0;
+  padding: 0.813rem 35% 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: var(--white-two);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+}
+
+.inp-author {
+  padding: 0.813rem 0.938rem 0.813rem 1rem;
+}
+
+.add-btn {
+  width: 12%;
+  height: 2.813rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--azure);
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
 }
