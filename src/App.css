@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=RobotoSlab');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;500;700;800&display=swap');
 
 * {
   margin: 0;
@@ -125,13 +125,13 @@ body {
   cursor: pointer;
 }
 
+.book-action-btn > button {
+  margin-top: 1rem;
+}
+
 .book-action-btn > button:not(:last-child) {
   padding-right: 15px;
   border-right: solid 0.125rem var(--white);
-}
-
-.book-action-btn > button{
-  margin-top: 1rem;
 }
 
 .author {
@@ -188,8 +188,6 @@ body {
 .chapter-prpgress {
   display: flex;
   flex-direction: column;
-
-  /* align-items: center; */
 }
 
 .update-progress {
@@ -232,7 +230,7 @@ body {
 
 .form-container {
   margin: 2.313rem 6.25rem 0;
-  border-top: 1px solid var(--white)
+  border-top: 1px solid var(--white);
 }
 
 .form-container h2 {
@@ -261,8 +259,6 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.15px;
-
-  /* color: #c4c4c4; */
 }
 
 .inp-author {
