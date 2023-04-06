@@ -129,6 +129,10 @@ body {
   margin-top: 1rem;
 }
 
+button:hover {
+  background-color: #0a5c9b;
+}
+
 .book-action-btn > button:not(:last-child) {
   padding-right: 15px;
   border-right: solid 0.125rem var(--white);
