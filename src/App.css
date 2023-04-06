@@ -22,20 +22,20 @@ ul {
 
 body {
   background-color: var(--pale-grey);
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  padding: 8% 2% 7% 6%;
 }
 
 .App-container {
-  margin: 0 2.5rem 4.063rem 0;
-  padding: 0 0 16.625rem;
+  margin: 0 2% 4% 0;
+  padding: 0 0 16%;
   border-radius: 4px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
   background-color: var(--z);
 }
 
 .navbar {
-  margin: 0 0 2.375rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  margin: 0 0 2%;
+  padding: 1% 6% 1% 6%;
   background-color: var(--white-two);
   border: solid 1px var(--white);
   display: flex;
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar h1 {
-  margin: 0.375rem 2.938rem 0.125rem 0;
+  padding-right: 2.938rem;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
@@ -81,8 +81,6 @@ body {
 .profile {
   width: 2.813rem;
   height: 2.813rem;
-  margin: 0 0 0 41.5rem;
-  padding: 0.875rem;
   color: var(--azure);
 }
 
