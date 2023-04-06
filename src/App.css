@@ -85,8 +85,8 @@ body {
 }
 
 .booklist > li {
-  margin: 2.313rem 6.25rem 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  margin: 2% 6% 0;
+  padding: 2% 9.188% 1.625% 1.688%;
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: var(--white-two);
@@ -96,7 +96,6 @@ body {
 }
 
 .Title {
-  margin: 0.188rem 20.188rem 0 0;
   font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
