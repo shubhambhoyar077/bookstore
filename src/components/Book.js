@@ -7,7 +7,7 @@ import 'react-circular-progressbar/dist/styles.css';
 
 export default function Book({ book }) {
   const dispatch = useDispatch();
-  const [percentage, setPercentage] = useState(0);
+  const [percentage, setPercentage] = useState(64);
   const handelRemove = (bookId) => {
     dispatch(deleteBook(bookId))
       .then(dispatch(removeBook(bookId)));
